@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="border-b-2 border-slate-700">
-        <div className="w-full flex flex-row justify-between text-[#FFFFFF] sm:pt-8 sm:pb-6 py-8 px-6 sm:px-14">
+        <div className="w-full flex flex-row justify-between text-[#FFFFFF] sm:pt-8 sm:pb-6 py-6 px-6 sm:px-14">
           <div className="flex-row items-center gap-2 md:flex hidden">
             <img src={consti_logo} alt="consti-logo" />
             <span className="text-[20px] ">ConstituentsAI</span>
