@@ -27,14 +27,12 @@ const MobileNav = () => {
           side="right"
         >
           <SheetHeader>
-            <SheetTitle>
-              <div className="flex flex-row justify-between items-center p-8 min-h-[109px]">
-                <div className="text-[18px]">ConstituentsAI</div>
-                <div>
-                  <SheetTrigger>
-                    <RxCross2 className="h-[24px] w-[24px]" />
-                  </SheetTrigger>
-                </div>
+            <SheetTitle className="min-h-[93px] flex flex-row justify-between items-center p-6">
+              <div className="text-[18px]">ConstituentsAI</div>
+              <div>
+                <SheetTrigger>
+                  <RxCross2 className="h-[24px] w-[24px]" />
+                </SheetTrigger>
               </div>
             </SheetTitle>
             <Separator className="border border-gray-800" />
@@ -101,7 +99,7 @@ const MobileNav = () => {
                   <li>Contact</li>
                 </Link>
               </ul> */}
-              <ul className="flex flex-col items-center gap-10 text-[18px] p-10">
+              <ul className="flex flex-col items-center gap-10 text-[16px] p-10">
                 <li>Home</li>
                 <li>Services</li>
                 <li>About</li>
