@@ -12,24 +12,22 @@ import StarsCanvas from "./components/StarBackground";
 
 const App = () => {
   return (
-    <>
-      <div className="bg-slate-950 min-h-[100vh]">
-        <StarsCanvas />
-        <Navbar />
-        <Home />
-        <Services />
-        <About />
-        <SayProveDo />
-        <div className="hidden sm:flex">
-          <Projects />
-        </div>
-        <div className="hidden sm:flex">
-          <Founders />
-        </div>
-        <Clients />
-        <Contact />
+    <div className="bg-slate-950 scroll-smooth snap-mandatory  max-w-screen overflow-x-hidden   min-h-[100vh]">
+      <StarsCanvas />
+      <Navbar />
+      <Home />
+      <Services />
+      <About />
+      <SayProveDo />
+      <div className="hidden sm:flex">
+        <Projects />
       </div>
-    </>
+      <div className="hidden sm:flex">
+        <Founders />
+      </div>
+      <Clients />
+      <Contact />
+    </div>
   );
 };
 

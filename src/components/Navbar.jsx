@@ -8,8 +8,8 @@ const Navbar = () => {
     console.log(to);
   };
   return (
-    <>
-      <nav className="border-b-2 border-slate-700">
+   
+      <nav className="border-b-2 w-screen border-slate-700">
         <div className="w-full flex flex-row justify-between text-[#FFFFFF] sm:pt-8 sm:pb-6 py-6 px-6 sm:px-14">
           <div className="flex-row items-center gap-2 md:flex hidden">
             <img src={consti_logo} alt="consti-logo" />
@@ -96,7 +96,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
   );
 };
 

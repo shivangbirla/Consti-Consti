@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="gradient-04 -z-1" />
         <h1 className="font-medium text-[28px] text-[#FFFFFF]">Our Projects</h1>
         <motion.div
-          variants={fadeIn("down", 0.4)}
+          variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}

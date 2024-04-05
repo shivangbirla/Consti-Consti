@@ -17,7 +17,7 @@ const Founders = () => {
       <div className="flex flex-col items-center mb-[5%]">
         <h1 className="text-[28px] font-medium text-[#FFFFFF]">Our Leaders</h1>
         <motion.div
-          variants={fadeIn("down", 0.4)}
+          variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}

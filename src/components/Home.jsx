@@ -6,7 +6,7 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <div
-      className="mt-[8%] pb-[8%] flex flex-col gap-[20px] sm:gap-[120px]"
+      className="pt-[10vh] min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[120px]"
       name="home"
     >
       <div className="flex flex-col sm:items-center p-8 sm:p-0">
