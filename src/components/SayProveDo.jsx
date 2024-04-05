@@ -1,6 +1,8 @@
 import React from "react";
 import sayProveDo from "../assets/sayprovedo.png";
 import spdImg from "../assets/spd-img.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const SayProveDo = () => {
   return (
@@ -16,18 +18,29 @@ const SayProveDo = () => {
       </div>
       <div className="flex justify-center relative">
         <div className="flex flex-row gap-0 sm:gap-[250px] w-full sm:w-1/2 ml-12 text-center justify-start sm:items-center relative">
-          <div className="text-[55px] sm:text-[92px] font-bold text-[#FFFFFF]">
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="text-[55px] sm:text-[92px] font-bold text-[#FFFFFF]"
+          >
             <p className="">Say</p>
             <p className="">Prove</p>
             <p className="">Do</p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+          >
             <img
               src={spdImg}
               alt="hero-img"
               className="sm:flex hidden w-[154px] h-[165px]"
             />
-          </div>
+          </motion.div>
         </div>
         <img
           src={sayProveDo}
@@ -35,7 +48,13 @@ const SayProveDo = () => {
           className="absolute -z-1 sm:w-[492px] sm:h-[554px] h-[266px] w-[236px] sm:left-[30%] sm:top-[-12%]"
         />
       </div>
-      <div className="flex justify-center mt-12 sm:mt-5">
+      <motion.div
+        variants={fadeIn("top", 0.6)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="flex justify-center mt-12 sm:mt-5"
+      >
         <p className="text-[#FFFFFF] font-regular text-[14px] px-5 sm:px-0 sm:text-[22px] max-w-[1100px] flex  sm:text-center">
           "At Constituents AI & Technology Pvt Ltd, we embody 'Say, prove, do.'
           By integrating cutting-edge technologies like AR/VR and AI into
@@ -44,7 +63,7 @@ const SayProveDo = () => {
           deliver tangible results that showcase our expertise and value to
           clients."
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

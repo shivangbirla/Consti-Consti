@@ -1,6 +1,8 @@
 import React from "react";
 import contactUsImg from "../assets/contactus-img.png";
 import ContactForm from "./ContactForm";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
@@ -12,7 +14,13 @@ const Contact = () => {
       />
       <div className="flex md:hidden gradientM-05 -z-1" />
       <div className="flex flex-col sm:flex-row justify-center px-7 sm:px-0">
-        <div className="min-w-[35%]">
+        <motion.div
+          variants={fadeIn("top", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="min-w-[35%]"
+        >
           <p className="font-bold text-[32px] sm:text-[54px]">
             <span className="bg-gradient-01 text-transparent bg-clip-text font-outfit">
               Have a{" "}
@@ -30,7 +38,7 @@ const Contact = () => {
           <p className="text-[15px] sm:text-[24px] font-regular text-[#FFFFFF]">
             Kindly, Fill the form, have a great day!
           </p>
-        </div>
+        </motion.div>
         <div className="z-10 min-w-[40%] mt-12 mb-4 sm:mt-0">
           <ContactForm />
         </div>

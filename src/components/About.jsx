@@ -1,5 +1,7 @@
 import React from "react";
 import AboutComp from "./AboutComp";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const About = () => {
   return (
@@ -9,10 +11,18 @@ const About = () => {
           Schedule Call
         </button>
       </div>
-      <div className="flex flex-col items-center mb-[6%]">
+      <div className="flex flex-col items-center">
         <h1 className="text-[22px] sm:text-[28px] font-medium text-[#FFFFFF]">
           About Us
         </h1>
+      </div>
+      <motion.div
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="flex flex-col items-center"
+      >
         <p className="text-[15px] sm:text-[54px] font-bold mb-10">
           <span className="bg-gradient text-transparent bg-clip-text font-outfit">
             Our team
@@ -21,6 +31,14 @@ const About = () => {
             is here to help
           </span>
         </p>
+      </motion.div>
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="flex flex-col items-center mb-[6%]"
+      >
         <p className="text-[#FFFFFF] text-[15px] sm:text-[28px] font-regular max-w-[1200px] text-center px-5 sm:px-0">
           ❝ At Constituents AI & Technology Pvt Ltd, our seasoned team delivers
           tailored solutions to diverse client needs, spanning technology, UX
@@ -28,14 +46,14 @@ const About = () => {
           state-of-the-art technologies like AR/VR and AI, propelling the
           evolution of next-gen solutions for leading AI-based companies. ❞
         </p>
-      </div>
+      </motion.div>
       <div className="hidden md:flex justify-center">
         <div className="flex flex-row border border-[#99b7c4] rounded-[32px] py-10 px-8 bg-[#0a1222]">
-          <AboutComp head="2+" bottom="Years of experience" />
+          <AboutComp head="2" bottom="Years of experience" />
           <hr className="border border-gray-800 w-0 h-[140px]" />
-          <AboutComp head="30+" bottom="Membered team" />
+          <AboutComp head="30" bottom="Membered team" />
           <hr className="border border-gray-800 w-0 h-[140px]" />
-          <AboutComp head="5+" bottom="Satisfied Clients" />
+          <AboutComp head="5" bottom="Satisfied Clients" />
           <hr className="border border-gray-800 w-0 h-[140px]" />
           <AboutComp head="2" bottom="International Partners" />
         </div>

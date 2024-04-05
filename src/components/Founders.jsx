@@ -2,6 +2,8 @@ import React from "react";
 import FounderComp from "./FounderComp";
 import whiteFlag from "../assets/white-flg.png";
 import fImg from "../assets/f-img.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Founders = () => {
   return (
@@ -14,51 +16,80 @@ const Founders = () => {
       </div>
       <div className="flex flex-col items-center mb-[5%]">
         <h1 className="text-[28px] font-medium text-[#FFFFFF]">Our Leaders</h1>
-        <p className="text-[56px] font-bold mb-[10%]">
-          <span className="bg-gradient text-transparent bg-clip-text font-outfit">
-            Founders{" "}
-          </span>
-          <span className="bg-gradient-01 text-transparent bg-clip-text font-outfit">
-            of ConstituentsAI
-          </span>
-        </p>
+        <motion.div
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+        >
+          <p className="text-[56px] font-bold mb-[10%]">
+            <span className="bg-gradient text-transparent bg-clip-text font-outfit">
+              Founders{" "}
+            </span>
+            <span className="bg-gradient-01 text-transparent bg-clip-text font-outfit">
+              of ConstituentsAI
+            </span>
+          </p>
+        </motion.div>
       </div>
       <div className="flex flex-row justify-center gap-[280px]">
         <div className="flex flex-col gap-[130px]">
-          <div>
+          <motion.div
+            variants={fadeIn("right", 0.7)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+          >
             <FounderComp
               img={whiteFlag}
               name="Shashwat Mehrotra"
               position="Director ConstituentsAI"
             />
-          </div>
-          <div className="ml-[60px]">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.7)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="ml-[60px]"
+          >
             <FounderComp
               img={whiteFlag}
               name="Shashwat Mehrotra"
               position="Director ConstituentsAI"
             />
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col gap-[130px]">
+        <motion.div className="flex flex-col gap-[130px]">
           <div>
             <img src={fImg} alt="some-img" className="w-[153px] h-[165px]" />
           </div>
-          <div>
+          <motion.div
+            variants={fadeIn("left", 0.7)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+          >
             <FounderComp
               img={whiteFlag}
               name="Shashwat Mehrotra"
               position="Director ConstituentsAI"
             />
-          </div>
-          <div className="ml-[60px]">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.7)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="ml-[60px]"
+          >
             <FounderComp
               img={whiteFlag}
               name="Shashwat Mehrotra"
               position="Director ConstituentsAI"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

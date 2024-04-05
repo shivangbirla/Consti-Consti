@@ -8,11 +8,13 @@ import Projects from "./components/Projects";
 import Clients from "./components/Clients";
 import Founders from "./components/Founders";
 import Contact from "./components/Contact";
+import StarsCanvas from "./components/StarBackground";
 
 const App = () => {
   return (
     <>
       <div className="bg-slate-950 min-h-[100vh]">
+        <StarsCanvas />
         <Navbar />
         <Home />
         <Services />
