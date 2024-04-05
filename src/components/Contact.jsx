@@ -39,7 +39,7 @@ const Contact = () => {
             Kindly, Fill the form, have a great day!
           </p>
         </motion.div>
-        <div className="z-10 min-w-[40%] mt-12 mb-4 sm:mt-0">
+        <div className="z-50 min-w-[40%] mt-12 mb-4 sm:mt-0">
           <ContactForm />
         </div>
       </div>
