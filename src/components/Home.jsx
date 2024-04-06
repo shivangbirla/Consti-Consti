@@ -6,7 +6,7 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <div
-      className="pt-[10vh] min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[120px]"
+      className="z-50  pt-[10vh] min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[120px]"
       name="home"
     >
       <div className="flex flex-col sm:items-center p-8 sm:p-0">
@@ -15,7 +15,7 @@ const Home = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-[15px] sm:text-[22px] font-medium text-[#FFFFFF] sm:mb-0 mb-5"
+          className="text-[15px] font-satoshi sm:text-[22px] font-medium text-[#FFFFFF] sm:mb-0 mb-5"
         >
           Welcome to Constituents AI & Technologies
         </motion.h1>

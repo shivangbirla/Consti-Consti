@@ -11,6 +11,8 @@ const Services = () => {
   const [ref, inView] = useInView({ threshold: 0.5 });
   return (
     <div
+      // data-scroll
+      // data-scroll-speed="+0.7"
       className="snap-center pt-[10vh] min-h-[80vh] snap-y md:py-[6%]"
       name="services"
       ref={ref}
