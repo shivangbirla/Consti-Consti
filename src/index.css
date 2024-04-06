@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url("https://fonts.cdnfonts.com/css/satoshi");
 
 @tailwind base;
 @tailwind components;
@@ -201,13 +201,15 @@
   -webkit-text-fill-color: transparent;
 }
 
-
 .backnavdrop {
   -webkit-backdrop-filter: saturate(180%) blur(5px);
   backdrop-filter: blur(15px);
   backface-visibility: hidden;
   perspective: 1000;
   transform: translateZ(0);
-  ;
   /* @apply backdrop-saturate-100; */
+}
+
+.parent::-webkit-scrollbar {
+  display: none;
 }

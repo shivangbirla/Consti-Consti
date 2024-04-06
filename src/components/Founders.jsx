@@ -9,11 +9,11 @@ const Founders = () => {
   return (
     <div className="py-[10%] relative w-full">
       <div className="md:flex hidden gradient-05 -z-1" />
-      <div className="flex justify-end mb-[5%]">
+      {/* <div className="flex justify-end mb-[5%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call
         </button>
-      </div>
+      </div> */}
       <div className="flex flex-col items-center mb-[5%]">
         <h1 className="text-[28px] font-medium text-[#FFFFFF]">Our Leaders</h1>
         <motion.div
@@ -60,7 +60,7 @@ const Founders = () => {
             />
           </motion.div>
         </div>
-        <motion.div className="flex flex-col gap-[130px]">
+        <div className="flex flex-col gap-[130px]">
           <div>
             <img src={fImg} alt="some-img" className="w-[153px] h-[165px]" />
           </div>
@@ -89,7 +89,7 @@ const Founders = () => {
               position="Director ConstituentsAI"
             />
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

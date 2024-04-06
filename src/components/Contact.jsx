@@ -6,7 +6,10 @@ import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
-    <div className="relative pt-[16%] sm:pt-[10%] pb-[2%]" name="contact">
+    <div
+      className="relative pt-[16%] sm:pt-[25vh] pb-[2%] parent"
+      name="contact"
+    >
       <img
         src={contactUsImg}
         alt="Say-Prove-Do"
@@ -44,9 +47,14 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-end mt-[6%] mr-8">
-        <p className="text-[18px] font-regular text-[#FFFFFF]">
+        <p className="text-[16px] font-regular text-[#FFFFFF]">
           2024 ConstituentsAI & Technology
         </p>
+      </div>
+      <div className="absolute bottom-[-5%] left-[10%] overflow-y-hidden parent">
+        <h1 className="text-[64px] text-[#FFFFFF] font-medium">
+          ConstituentsAI
+        </h1>
       </div>
     </div>
   );

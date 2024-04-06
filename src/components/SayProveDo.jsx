@@ -7,11 +7,11 @@ import { fadeIn } from "../variants";
 const SayProveDo = () => {
   return (
     <div className="py-[25%] sm:py-[10%]">
-      <div className="hidden md:flex justify-end mb-[3%]">
+      {/* <div className="hidden md:flex justify-end mb-[3%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call
         </button>
-      </div>
+      </div> */}
       <div className="flex justify-center mb-5 relative">
         <h1 className="font-medium text-[28px] text-[#FFFFFF]">Our Approach</h1>
         <div className="flex md:hidden gradientM-04 -z-1" />

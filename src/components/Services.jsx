@@ -13,15 +13,15 @@ const Services = () => {
     <div
       // data-scroll
       // data-scroll-speed="+0.7"
-      className="snap-center pt-[10vh] min-h-[80vh] snap-y md:py-[6%]"
+      className="snap-center pt-[14vh] min-h-[80vh] snap-y md:py-[14%]"
       name="services"
       ref={ref}
     >
-      <div className="hidden md:flex justify-end mb-[5%]">
+      {/* <div className="hidden md:flex justify-end mb-[5%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call
         </button>
-      </div>
+      </div> */}
       <div className="flex w-full">
         <h1 className="mx-auto text-[22px] sm:text-[28px] font-medium text-[#FFFFFF]">
           Our Services
@@ -34,7 +34,7 @@ const Services = () => {
         viewport={{ once: false, amount: 0.7 }}
         className="flex flex-col items-center"
       >
-        <p className="text-[15px] sm:text-[56px] font-bold mb-[10%]">
+        <p className="text-[15px] sm:text-[56px] font-bold mb-[8%]">
           <span className="bg-gradient-01 text-transparent bg-clip-text font-outfit">
             Taking your business to{" "}
           </span>

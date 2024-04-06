@@ -42,7 +42,7 @@ function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your Name"
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+            className="appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           />
         </div>
         <div className="w-full md:w-1/2 px-3">
@@ -52,7 +52,7 @@ function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Your Email"
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           />
         </div>
       </div>
@@ -64,7 +64,7 @@ function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Phone No."
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           />
         </div>
         <div className="w-full md:w-1/2 px-3">
@@ -74,7 +74,7 @@ function ContactForm() {
             value={formData.country}
             onChange={handleChange}
             placeholder="Country"
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           />
         </div>
       </div>
@@ -86,7 +86,7 @@ function ContactForm() {
             value={formData.companyName}
             onChange={handleChange}
             placeholder="Company Name"
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           />
         </div>
         <div className="w-full md:w-1/2 px-3">
@@ -96,7 +96,7 @@ function ContactForm() {
             value={formData.interestedIn}
             onChange={handleChange}
             placeholder="Interested In"
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           />
         </div>
       </div>
@@ -107,7 +107,7 @@ function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             placeholder="Message"
-            className="h-24 appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="h-24 appearance-none block w-full bg-gray-800 text-white border border-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-600"
           ></textarea>
         </div>
       </div>

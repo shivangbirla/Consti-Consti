@@ -6,11 +6,11 @@ import { fadeIn } from "../variants";
 const About = () => {
   return (
     <div className="py-[15%] md:py-[10%]" name="about">
-      <div className="hidden md:flex justify-end mb-[3%]">
+      {/* <div className="hidden md:flex justify-end mb-[3%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call
         </button>
-      </div>
+      </div> */}
       <div className="flex flex-col items-center">
         <h1 className="text-[22px] sm:text-[28px] font-medium text-[#FFFFFF]">
           About Us

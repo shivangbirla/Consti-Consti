@@ -8,7 +8,7 @@ const Navbar = () => {
     console.log(to);
   };
   return (
-    <nav className="z-50 fixed backnavdrop top-0  border-b-2 w-screen border-slate-700">
+    <nav className="z-50 fixed backnavdrop top-0  w-screen  shadow-2xl">
       <div className="w-full flex flex-row justify-between text-[#FFFFFF] sm:pt-8 sm:pb-6 py-6 px-6 sm:px-14">
         <div className="flex-row items-center gap-2 md:flex hidden">
           <img src={consti_logo} alt="consti-logo" />
@@ -45,7 +45,7 @@ const Navbar = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={110}
+              offset={20}
               duration={500}
               onSetActive={handleSetActive}
               className="cursor-pointer"
@@ -57,7 +57,7 @@ const Navbar = () => {
               to="clients"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={20}
               duration={500}
               onSetActive={handleSetActive}
               className="cursor-pointer"
@@ -69,7 +69,7 @@ const Navbar = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-110}
               duration={500}
               onSetActive={handleSetActive}
               className="cursor-pointer"
