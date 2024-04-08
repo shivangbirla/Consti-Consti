@@ -3,19 +3,22 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
+import { useIsSmall } from "@/hooks/utils";
 
 const Home = () => {
   const handleSetActive = (to) => {
     console.log(to);
   };
+
+  const isSmall = useIsSmall();
   return (
     <div
-      className="z-50  pt-[22vh] min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[90px]"
+      className="z-50  pt-[22vh] md:min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[90px]"
       name="home"
     >
       <div className="flex flex-col sm:items-center p-8 sm:p-0">
         <motion.h1
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn("up", 0.3, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -24,7 +27,7 @@ const Home = () => {
           Welcome to Constituents AI & Technologies
         </motion.h1>
         <motion.p
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.4, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -33,7 +36,7 @@ const Home = () => {
           We make Everything Look
         </motion.p>
         <motion.p
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.4, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -50,7 +53,7 @@ const Home = () => {
           </span>
         </motion.p>
         <motion.p
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn("up", 0.3, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -63,7 +66,7 @@ const Home = () => {
       </div>
       <div className="md:hidden relative flex text-[#FFFFFF] px-8">
         <motion.button
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn("up", 0.3, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -85,7 +88,7 @@ const Home = () => {
           className="cursor-pointer"
         >
           <motion.button
-            variants={fadeIn("up", 0.3)}
+            variants={fadeIn("up", 0.3, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}

@@ -3,8 +3,10 @@ import sayProveDo from "../assets/sayprovedo.png";
 import spdImg from "../assets/spd-img.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useIsSmall } from "@/hooks/utils";
 
 const SayProveDo = () => {
+  const isSmall = useIsSmall();
   return (
     <div className="py-[25%] sm:py-[10%]">
       {/* <div className="hidden md:flex justify-end mb-[3%]">
@@ -17,9 +19,9 @@ const SayProveDo = () => {
         <div className="flex md:hidden gradientM-04 -z-1" />
       </div>
       <div className="flex justify-center relative">
-        <div className="flex flex-row gap-0 sm:gap-[250px] w-full sm:w-1/2 ml-12 text-center justify-start sm:items-center relative">
+        <div className="flex flex-row gap-[60px] sm:gap-[250px] w-full sm:w-1/2 ml-12 text-center justify-start sm:items-center relative">
           <motion.div
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.4, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -30,15 +32,16 @@ const SayProveDo = () => {
             <p className="">Do</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.4)}
+            variants={fadeIn("left", 0.4, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
+            className="flex md:mt-0 mt-4"
           >
             <img
               src={spdImg}
               alt="hero-img"
-              className="sm:flex hidden w-[154px] h-[165px]"
+              className="w-[105px] h-[115px] md:w-[154px] md:h-[165px]"
             />
           </motion.div>
         </div>
@@ -49,7 +52,7 @@ const SayProveDo = () => {
         />
       </div>
       <motion.div
-        variants={fadeIn("top", 0.6)}
+        variants={fadeIn("top", 0.6, isSmall)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}

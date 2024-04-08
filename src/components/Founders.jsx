@@ -4,8 +4,10 @@ import whiteFlag from "../assets/white-flg.png";
 import fImg from "../assets/f-img.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useIsSmall } from "@/hooks/utils";
 
 const Founders = () => {
+  const isSmall = useIsSmall();
   return (
     <div className="py-[10%] relative w-full">
       <div className="md:flex hidden gradient-05 -z-1" />
@@ -17,7 +19,7 @@ const Founders = () => {
       <div className="flex flex-col items-center mb-[5%]">
         <h1 className="text-[28px] font-medium text-[#FFFFFF]">Our Leaders</h1>
         <motion.div
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.4, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -35,7 +37,7 @@ const Founders = () => {
       <div className="flex flex-row justify-center gap-[280px]">
         <div className="flex flex-col gap-[130px]">
           <motion.div
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.7, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -47,7 +49,7 @@ const Founders = () => {
             />
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.7, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -65,7 +67,7 @@ const Founders = () => {
             <img src={fImg} alt="some-img" className="w-[153px] h-[165px]" />
           </div>
           <motion.div
-            variants={fadeIn("left", 0.7)}
+            variants={fadeIn("left", (0.7).isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -77,7 +79,7 @@ const Founders = () => {
             />
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.7)}
+            variants={fadeIn("left", 0.7, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}

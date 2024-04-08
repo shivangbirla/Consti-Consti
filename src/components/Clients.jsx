@@ -5,8 +5,10 @@ import p2 from "../assets/p2.png";
 import p3 from "../assets/p3.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useIsSmall } from "@/hooks/utils";
 
 const Clients = () => {
+  const isSmall = useIsSmall();
   return (
     <div className="py-[10%] relative" name="clients">
       <div className="md:flex hidden gradient-06 -z-1" />
@@ -15,7 +17,7 @@ const Clients = () => {
           Our Clients
         </h1>
         <motion.p
-          variants={fadeIn("down", 0.2)}
+          variants={fadeIn("down", 0.2, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}

@@ -3,15 +3,17 @@ import ProjectsComp from "./ProjectsComp";
 import projectsImg from "../assets/projects-img.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useIsSmall } from "@/hooks/utils";
 
 const Projects = () => {
+  const isSmall = useIsSmall();
   return (
     <div className="pt-[6%] pb-[10%] w-full">
       <div className="flex flex-col items-center mb-[5%] relative">
         <div className="gradient-04 -z-1" />
         <h1 className="font-medium text-[28px] text-[#FFFFFF]">Our Projects</h1>
         <motion.div
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.4, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -27,7 +29,7 @@ const Projects = () => {
         </motion.div>
       </div>
       <motion.div
-        variants={fadeIn("top", 0.6)}
+        variants={fadeIn("top", 0.6, isSmall)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}

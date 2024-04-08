@@ -17,13 +17,13 @@ const MobileNav = () => {
     console.log(to);
   };
   return (
-    <div>
+    <div className="">
       <Sheet>
         <SheetTrigger>
           <GiHamburgerMenu className="h-[35px] w-[35px]" />
         </SheetTrigger>
         <SheetContent
-          className="absolute top-0 right-0 w-[80%] min-h-[100vh] bg-slate-900 text-white z-20"
+          className="absolute top-0 right-0 w-[80%] min-h-[100vh] bg-slate-900 text-white"
           side="right"
         >
           <SheetHeader>

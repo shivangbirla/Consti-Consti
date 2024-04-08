@@ -25,7 +25,7 @@ const App = () => {
       data-scroll-container
       className="bg-slate-950 font-satoshi scroll-smooth snap-mandatory  max-w-screen overflow-x-hidden min-h-[100vh]"
     >
-      {/* <StarsCanvas /> */}
+      <StarsCanvas />
       <Navbar />
       <Home />
       <Services />

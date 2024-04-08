@@ -6,9 +6,12 @@ import service3 from "../assets/service-3.svg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useIsSmall } from "@/hooks/utils";
 
 const Services = () => {
   const [ref, inView] = useInView({ threshold: 0.5 });
+
+  const isSmall = useIsSmall();
   return (
     <div
       // data-scroll
@@ -28,7 +31,7 @@ const Services = () => {
         </h1>
       </div>
       <motion.div
-        variants={fadeIn("up", 0.4)}
+        variants={fadeIn("up", 0.4, isSmall)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
@@ -44,7 +47,7 @@ const Services = () => {
         </p>
       </motion.div>
       <motion.div
-        variants={fadeIn("up", 0.4)}
+        variants={fadeIn("up", 0.4, isSmall)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}

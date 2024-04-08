@@ -3,8 +3,10 @@ import contactUsImg from "../assets/contactus-img.png";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useIsSmall } from "@/hooks/utils";
 
 const Contact = () => {
+  const isSmall = useIsSmall();
   return (
     <div
       className="relative pt-[16%] sm:pt-[25vh] pb-[2%] parent"
@@ -18,7 +20,7 @@ const Contact = () => {
       <div className="flex md:hidden gradientM-05 -z-1" />
       <div className="flex flex-col sm:flex-row justify-center px-7 sm:px-0">
         <motion.div
-          variants={fadeIn("top", 0.2)}
+          variants={fadeIn("top", 0.2, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -47,12 +49,12 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-end mt-[6%] mr-8">
-        <p className="text-[16px] font-regular text-[#FFFFFF]">
+        <p className="text-[10px] md:text-[16px] font-regular text-[#FFFFFF]">
           2024 ConstituentsAI & Technology
         </p>
       </div>
-      <div className="absolute bottom-[-5%] left-[10%] overflow-y-hidden parent">
-        <h1 className="text-[64px] text-[#FFFFFF] font-medium">
+      <div className="absolute bottom-[1%] md:bottom-[-5%] left-[10%] overflow-y-hidden parent">
+        <h1 className="text-[16px] md:text-[64px] text-[#FFFFFF] font-medium">
           ConstituentsAI
         </h1>
       </div>
