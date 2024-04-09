@@ -17,7 +17,7 @@ const Clients = () => {
           Our Clients
         </h1>
         <motion.p
-          variants={fadeIn("down", 0.2, isSmall)}
+          variants={fadeIn("up", 0.2, isSmall)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}

@@ -16,14 +16,14 @@ const App = () => {
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
     lenisOptions: {
-      lerp: 0.07,
+      lerp: 0.06,
     },
   });
   console.log(locomotiveScroll);
   return (
     <div
       data-scroll-container
-      className="bg-slate-950 font-satoshi scroll-smooth snap-mandatory  max-w-screen overflow-x-hidden min-h-[100vh]"
+      className="bg-slate-950 font-satoshi scroll-smooth snap-mandatory  max-w-screen overflow-x-hidden overflow-y-hidden min-h-[100vh]"
     >
       <StarsCanvas />
       <Navbar />

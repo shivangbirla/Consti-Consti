@@ -8,7 +8,7 @@ import { useIsSmall } from "@/hooks/utils";
 const SayProveDo = () => {
   const isSmall = useIsSmall();
   return (
-    <div className="py-[25%] sm:py-[10%]">
+    <div className="py-[25%]  flex-col justify-center items-center sm:py-[10%]">
       {/* <div className="hidden md:flex justify-end mb-[3%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call
@@ -18,14 +18,14 @@ const SayProveDo = () => {
         <h1 className="font-medium text-[28px] text-[#FFFFFF]">Our Approach</h1>
         <div className="flex md:hidden gradientM-04 -z-1" />
       </div>
-      <div className="flex justify-center relative">
-        <div className="flex flex-row gap-[60px] sm:gap-[250px] w-full sm:w-1/2 ml-12 text-center justify-start sm:items-center relative">
+      <div className="flex justify-center mx-auto relative">
+        <div className="flex flex-row gap-12 sm:gap-[250px] w-full md:mx-auto  text-center justify-center sm:items-center relative">
           <motion.div
             variants={fadeIn("right", 0.4, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-[55px] sm:text-[92px] font-bold text-[#FFFFFF]"
+            className="text-[55px] text-left leading-[85px] my-3	 sm:text-[92px] font-bold text-[#FFFFFF]"
           >
             <p className="">Say</p>
             <p className="">Prove</p>
@@ -36,12 +36,12 @@ const SayProveDo = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex md:mt-0 mt-4"
+            className="flex items-center "
           >
             <img
               src={spdImg}
               alt="hero-img"
-              className="w-[105px] h-[115px] md:w-[154px] md:h-[165px]"
+              className="w-[60px] h-[60px] md:w-[154px] md:h-[165px]"
             />
           </motion.div>
         </div>
@@ -63,8 +63,8 @@ const SayProveDo = () => {
           By integrating cutting-edge technologies like AR/VR and AI into
           tailored solutions, we demonstrate our commitment to innovation.
           Spearheading next-gen solutions for leading AI-based companies, we
-          deliver tangible results that showcase our expertise and value to
-          clients."
+          deliver tangible results that showcase our expertise and value to"
+          clients.
         </p>
       </motion.div>
     </div>
