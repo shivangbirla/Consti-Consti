@@ -18,14 +18,14 @@ const SayProveDo = () => {
         <h1 className="font-medium text-[28px] text-[#FFFFFF]">Our Approach</h1>
         <div className="flex md:hidden gradientM-04 -z-1" />
       </div>
-      <div className="flex justify-center mx-auto relative mb-4 md:mb-10">
-        <div className="flex flex-row gap-12 sm:gap-[250px] w-full md:mx-auto  text-center justify-center sm:items-center relative">
+      <div className="flex justify-center mx-auto relative">
+        <div className="flex flex-row gap-12 sm:gap-[250px] w-full md:mx-auto  text-center justify-start sm:justify-center ml-8  sm:items-center relative">
           <motion.div
             variants={fadeIn("right", 0.4, isSmall)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-[55px] text-left leading-[85px] my-3	 sm:text-[92px] font-bold text-[#FFFFFF]"
+            className="text-[55px] text-right leading-[65px]  sm:leading-[85px] my-8 sm:my-3	opacity-100 sm:text-[92px] font-bold text-[#FFFFFF]"
           >
             <p className="">Say</p>
             <p className="">Prove</p>
@@ -36,7 +36,7 @@ const SayProveDo = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex items-center "
+            className="hidden sm:flex items-center "
           >
             <img
               src={spdImg}
