@@ -13,7 +13,7 @@ const Home = () => {
   const isSmall = useIsSmall();
   return (
     <div
-      className="z-50  pt-[22vh] md:min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[90px]"
+      className="z-50  pt-[22vh] md:min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[90px] container"
       name="home"
     >
       <div className="flex flex-col sm:items-center p-8 sm:p-0">
@@ -85,7 +85,7 @@ const Home = () => {
           offset={50}
           duration={500}
           onSetActive={handleSetActive}
-          className="cursor-pointer"
+          className="cursor-pointer z-30"
         >
           <motion.button
             variants={fadeIn("up", 0.3, isSmall)}

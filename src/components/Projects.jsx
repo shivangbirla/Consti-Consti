@@ -8,7 +8,7 @@ import { useIsSmall } from "@/hooks/utils";
 const Projects = () => {
   const isSmall = useIsSmall();
   return (
-    <div className="pt-[6%] pb-[10%] w-full">
+    <div className="pt-[6%] pb-[10%] w-full container">
       <div className="flex flex-col items-center mb-[5%] relative">
         <div className="gradient-04 -z-1" />
         <h1 className="font-medium text-[28px] text-[#FFFFFF]">Our Projects</h1>

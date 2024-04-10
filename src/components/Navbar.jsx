@@ -8,7 +8,7 @@ const Navbar = () => {
     console.log(to);
   };
   return (
-    <nav className="z-30 fixed backnavdrop top-0  w-screen  shadow-2xl">
+    <nav className="z-30 fixed backnavdrop top-0 w-screen  shadow-2xl">
       <div className="w-full flex flex-row justify-between text-[#FFFFFF] sm:pt-8 sm:pb-6 py-6 px-6 sm:px-14">
         <div className="flex-row items-center gap-2 md:flex hidden">
           <img src={consti_logo} alt="consti-logo" />

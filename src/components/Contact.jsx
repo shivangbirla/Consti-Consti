@@ -9,16 +9,16 @@ const Contact = () => {
   const isSmall = useIsSmall();
   return (
     <div
-      className="relative pt-[16%] sm:pt-[25vh] pb-[2%] parent"
+      className="relative pt-[16%] sm:pt-[25vh] pb-[2%] parent container"
       name="contact"
     >
       <img
         src={contactUsImg}
         alt="Say-Prove-Do"
-        className="absolute -z-1 w-[1006px] h-[230px] left-0 top-0 hidden sm:flex"
+        className="absolute -z-1 w-[1006px] h-[180px] left-[-80px] top-0 hidden sm:flex"
       />
       <div className="flex md:hidden gradientM-05 -z-1" />
-      <div className="flex flex-col sm:flex-row justify-center px-7 sm:px-0">
+      <div className="flex flex-col sm:flex-row justify-center px-7 sm:px-0 sm:gap-[75px] mb-5 md:mb-0">
         <motion.div
           variants={fadeIn("top", 0.2, isSmall)}
           initial="hidden"

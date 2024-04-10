@@ -10,9 +10,9 @@ import { useIsSmall } from "@/hooks/utils";
 const Clients = () => {
   const isSmall = useIsSmall();
   return (
-    <div className="py-[10%] relative" name="clients">
+    <div className="py-[10%] relative container" name="clients">
       <div className="md:flex hidden gradient-06 -z-1" />
-      <div className="flex flex-col items-center mb-[8%] sm:mb-[4%]">
+      <div className="flex flex-col items-center mb-[9%] sm:mb-[4%]">
         <h1 className="text-[#FFFFFF] text-[22px] sm:text-[28px] font-medium">
           Our Clients
         </h1>

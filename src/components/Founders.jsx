@@ -9,7 +9,7 @@ import { useIsSmall } from "@/hooks/utils";
 const Founders = () => {
   const isSmall = useIsSmall();
   return (
-    <div className="py-[10%] relative w-full">
+    <div className="py-[10%] relative w-full container">
       <div className="md:flex hidden gradient-05 -z-1" />
       {/* <div className="flex justify-end mb-[5%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">

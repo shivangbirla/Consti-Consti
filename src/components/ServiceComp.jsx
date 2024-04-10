@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceComp = ({ img, name, desc }) => {
   return (
-    <div className="flex flex-col text-[#FFFFFF] max-w-[75%] md:max-w-[20%]">
+    <div className="flex flex-col items-center text-[#FFFFFF] max-w-[80%] mx-auto">
       <div className="flex justify-center min-h-[80px]">
         <img src={img} alt={name} className="w-[60px] h-[60px]" />
       </div>

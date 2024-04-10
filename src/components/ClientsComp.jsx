@@ -3,13 +3,13 @@ import cImg from "../assets/c-img.png";
 
 const ClientsComp = ({ logo, desc, imgTitle, isReverse }) => {
   return (
-    <div className="sm:pl-[7%] flex justify-center">
+    <div className="flex justify-center">
       <div
         className={`flex ${
-          isReverse ? "sm:flex-row-reverse sm:pl-[68px]" : "sm:flex-row"
+          isReverse ? "sm:flex-row-reverse md:gap-[140px]" : "sm:flex-row"
         } max-w-[80%] justify-around flex-col-reverse`}
       >
-        <div className="min-w-[80%] sm:min-w-[46%]">
+        <div className="min-w-[80%] sm:min-w-[46%] flex justify-center">
           <div className="flex flex-row">
             <div className="min-w-[50px] mr-4">
               <img
@@ -32,7 +32,7 @@ const ClientsComp = ({ logo, desc, imgTitle, isReverse }) => {
             </div>
           </div>
         </div>
-        <div className="sm:min-w-[46%]">
+        <div className="sm:min-w-[46%] flex justify-center">
           <div className="sm:w-[372px] sm:h-[227px] w-full h-[195px] border border-[#99b7c4] bg-[#0a1222] rounded-[24px] flex justify-start items-end p-4">
             <div className="text-[#87B0F1] font-medium text-[20px] max-w-[200px]">
               {imgTitle}

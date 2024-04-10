@@ -213,3 +213,13 @@
 .parent::-webkit-scrollbar {
   display: none;
 }
+
+.container {
+  padding: inherit 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: inherit 0;
+  }
+}
