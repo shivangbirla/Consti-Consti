@@ -6,10 +6,14 @@ const ClientsComp = ({ logo, desc, imgTitle, isReverse }) => {
     <div className="flex justify-center">
       <div
         className={`flex ${
-          isReverse ? "sm:flex-row-reverse md:gap-[140px]" : "sm:flex-row"
+          isReverse ? "sm:flex-row-reverse" : "sm:flex-row"
         } max-w-[80%] justify-around flex-col-reverse`}
       >
-        <div className="min-w-[80%] sm:min-w-[46%] flex justify-center">
+        <div
+          className={`min-w-[80%] sm:min-w-[46%] flex justify-center ${
+            isReverse ? "md:ml-[120px]" : ""
+          }`}
+        >
           <div className="flex flex-row">
             <div className="min-w-[50px] mr-4">
               <img

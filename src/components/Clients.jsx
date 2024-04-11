@@ -12,7 +12,7 @@ const Clients = () => {
   return (
     <div className="py-[10%] relative mobContainer sm:container" name="clients">
       <div className="md:flex hidden gradient-06 -z-1" />
-      <div className="flex flex-col items-center mb-[9%] sm:mb-[4%]">
+      <div className="flex flex-col items-center mb-[9%] sm:mb-[5%]">
         <h1 className="text-[#FFFFFF] text-[22px] sm:text-[28px] font-medium">
           Our Clients
         </h1>
@@ -31,7 +31,7 @@ const Clients = () => {
           </span>
         </motion.p>
       </div>
-      <div className="flex flex-col gap-[80px] items-center">
+      <div className="flex flex-col gap-[65px] sm:gap-[85px] items-center">
         <ClientsComp
           logo={p1}
           desc="Lorem ipsum is the text, which we will write for zencore solutions, how we solved their problem and simplied whole process."
