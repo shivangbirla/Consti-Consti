@@ -8,7 +8,7 @@ import { useIsSmall } from "@/hooks/utils";
 const SayProveDo = () => {
   const isSmall = useIsSmall();
   return (
-    <div className="py-[25%]  flex-col justify-center items-center sm:py-[10%] container">
+    <div className="py-[25%]  flex-col justify-center items-center sm:py-[10%] mobContainer sm:container">
       {/* <div className="hidden md:flex justify-end mb-[3%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call

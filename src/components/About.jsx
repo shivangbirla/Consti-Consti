@@ -10,7 +10,10 @@ const About = () => {
   const isSmall = useIsSmall();
   const [ref, inView] = useInView({ threshold: 0.5 });
   return (
-    <div className="pt-[20vh] pb-[6vh] md:py-[10%] container" name="about">
+    <div
+      className="pt-[20vh] pb-[6vh] md:py-[10%] mobContainer sm:container"
+      name="about"
+    >
       {/* <div className="hidden md:flex justify-end mb-[3%]">
         <button className="border border-[#85D3FA] px-4 py-2 mr-14 rounded-lg text-[#FFFFFF]">
           Schedule Call

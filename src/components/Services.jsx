@@ -16,7 +16,7 @@ const Services = () => {
     <div
       // data-scroll
       // data-scroll-speed="+0.7"
-      className="snap-center pt-[14vh] min-h-[80vh] snap-y md:py-[14%] container"
+      className="snap-center pt-[14vh] min-h-[80vh] snap-y md:py-[14%] mobContainer sm:container"
       name="services"
       ref={ref}
     >

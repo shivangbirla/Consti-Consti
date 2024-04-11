@@ -9,7 +9,7 @@ const Contact = () => {
   const isSmall = useIsSmall();
   return (
     <div
-      className="relative pt-[16%] sm:pt-[25vh] pb-[2%] parent container"
+      className="relative pt-[16%] sm:pt-[25vh] pb-[2%] parent mobContainer sm:container"
       name="contact"
     >
       <img

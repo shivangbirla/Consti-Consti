@@ -13,7 +13,7 @@ const Home = () => {
   const isSmall = useIsSmall();
   return (
     <div
-      className="z-50  pt-[22vh] md:min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[90px] container"
+      className="z-50  pt-[22vh] md:min-h-[80vh] snap-center flex flex-col justify-center gap-[20px] sm:gap-[90px] mobContainer sm:container"
       name="home"
     >
       <div className="flex flex-col sm:items-center p-8 sm:p-0">

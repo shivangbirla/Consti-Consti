@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div
       data-scroll-container
-      className="bg-slate-950 font-satoshi scroll-smooth snap-mandatory  max-w-screen overflow-x-hidden overflow-y-hidden min-h-[100vh] "
+      className="bg-slate-950 font-satoshi scroll-smooth snap-mandatory  max-w-screen overflow-x-hidden overflow-y-hidden min-h-[100vh]"
     >
       <StarsCanvas />
       <Navbar />
